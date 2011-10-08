@@ -1,6 +1,8 @@
 Rormud::Application.routes.draw do
   resources :rooms
 
+  root :to => 'rooms#start'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

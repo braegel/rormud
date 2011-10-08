@@ -1,9 +1,3 @@
 <p id="notice"><%= notice %></p>
 
-<div class='room'>
-<div class='name'><%= @room.name %></div>
-<div class='description'><%= @room.description %></div>
-</div>
-
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+<%= render("room") %>
