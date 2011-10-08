@@ -6,9 +6,19 @@
  *= require_tree . 
 */
 
-body{
-	background-color: black;
-}
+/* Colorsheme
+http://www.colorschemer.com/schemes/viewscheme.php?id=8764
+white:		#f2ffff
+dark-red: 	#891225
+orange: 	#e62900
+brown:		#ce8e00
+dark-yellow:#e0c800
+br-yellow:	#e2f52c
+brown-red	#6d2c2a
+dark-grey	#302e29
+dark-blue	#1f1b52
+mid-blue	#2717a6
+light-blue:	#3625e0
+green:		#216221
 
-.room .name{
-}
+*/

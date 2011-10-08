@@ -1,6 +1,23 @@
+/* Colorsheme
+http://www.colorschemer.com/schemes/viewscheme.php?id=8764
+white:		#f2ffff
+dark-red: 	#891225
+orange: 	#e62900
+brown:		#ce8e00
+dark-yellow:#e0c800
+br-yellow:	#e2f52c
+brown-red	#6d2c2a
+dark-grey	#302e29
+dark-blue	#1f1b52
+mid-blue	#2717a6
+light-blue:	#3625e0
+green:		#216221
+
+*/
+
 body {
   background-color: black;
-  color: white;
+  color: #f2ffff;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
@@ -16,7 +33,7 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: white;
   &:visited {
     color: #666; }
   &:hover {
