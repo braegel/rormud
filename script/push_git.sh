@@ -1,0 +1,1 @@
+reset && bundle exec rake db:seed && bundle exec rake test && git push github master
