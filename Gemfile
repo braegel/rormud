@@ -33,3 +33,8 @@ group :test do
 end
 
 gem 'execjs'
+gem 'therubyracer'
+
+gem 'ci_reporter'
+
+gem 'test-unit'
