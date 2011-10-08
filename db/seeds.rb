@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Room.delete_all
+
+Room.create(
+  :name => "Willkommen",
+  :description => "Es ist total dunkel"
+)
