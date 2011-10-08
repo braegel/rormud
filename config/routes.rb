@@ -1,4 +1,6 @@
 Rormud::Application.routes.draw do
+  resources :exits
+
   resources :rooms
 
   root :to => 'rooms#start'

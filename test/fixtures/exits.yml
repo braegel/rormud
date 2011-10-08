@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  room_from: 1
+  room_to: 1
+  name: MyString
+
+two:
+  room_from: 1
+  room_to: 1
+  name: MyString

@@ -1,0 +1,27 @@
+<h1>Listing exits</h1>
+
+<table>
+  <tr>
+    <th>Room from</th>
+    <th>Room to</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @exits.each do |exit| %>
+  <tr>
+    <td><%= exit.room_from %></td>
+    <td><%= exit.room_to %></td>
+    <td><%= exit.name %></td>
+    <td><%= link_to 'Show', exit %></td>
+    <td><%= link_to 'Edit', edit_exit_path(exit) %></td>
+    <td><%= link_to 'Destroy', exit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Exit', new_exit_path %>

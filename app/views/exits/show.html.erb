@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Room from:</b>
+  <%= @exit.room_from %>
+</p>
+
+<p>
+  <b>Room to:</b>
+  <%= @exit.room_to %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @exit.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_exit_path(@exit) %> |
+<%= link_to 'Back', exits_path %>

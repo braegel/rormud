@@ -1,0 +1,29 @@
+<%= form_for(@exit) do |f| %>
+  <% if @exit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exit.errors.count, "error") %> prohibited this exit from being saved:</h2>
+
+      <ul>
+      <% @exit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :room_from %><br />
+    <%= f.number_field :room_from %>
+  </div>
+  <div class="field">
+    <%= f.label :room_to %><br />
+    <%= f.number_field :room_to %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
