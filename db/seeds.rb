@@ -9,6 +9,6 @@
 Room.delete_all
 
 Room.create(
-  :name => "Willkommen",
-  :description => "Es ist total dunkel"
+  :name => "Ein langer dunkler Flur",
+  :description => "Vor dir liegt ein langer dunkler Flur."
 )
