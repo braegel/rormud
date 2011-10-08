@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Room from</th>
-    <th>Room to</th>
+    <th>Room Id</th>
+    <th>To Room</th>
     <th>Name</th>
     <th></th>
     <th></th>
@@ -12,8 +12,8 @@
 
 <% @exits.each do |exit| %>
   <tr>
-    <td><%= exit.room_from %></td>
-    <td><%= exit.room_to %></td>
+    <td><%= exit.room_id %></td>
+    <td><%= exit.to_room %></td>
     <td><%= exit.name %></td>
     <td><%= link_to 'Show', exit %></td>
     <td><%= link_to 'Edit', edit_exit_path(exit) %></td>
