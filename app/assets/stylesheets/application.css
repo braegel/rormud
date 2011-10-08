@@ -22,3 +22,24 @@ light-blue:	#3625e0
 green:		#216221
 
 */
+
+h2{
+	
+}
+
+.room .name{
+	color: #6d2c2a;
+}
+
+.room .description{
+	color: #f2ffff;
+	width: 500px;
+}
+
+.exits a{
+	color: #e0c800;
+}
+
+li {
+  list-style-type: none;
+}

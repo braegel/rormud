@@ -2,3 +2,11 @@
 <div class='name'><%= @room.name %></div>
 <div class='description'><%= @room.description %></div>
 </div>
+
+<div class='exits'>
+<ul>
+<% @room.exits.each do |exit| %>
+<li><%= link_to exit.name, room_path(exit.to_room) %></li>
+<% end %>
+</ul>
+</div>

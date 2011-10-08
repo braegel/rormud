@@ -1,1 +1,1 @@
-<%= redirect room_path(Room.all.first.id), " %>
+<%= link_to "Start", room_path(Room.where(:name => "Ein langer dunkler Flur").first.id) %>

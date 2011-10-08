@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111008223142) do
+ActiveRecord::Schema.define(:version => 20111008230526) do
 
   create_table "exits", :force => true do |t|
-    t.integer  "room_from"
-    t.integer  "room_to"
+    t.integer  "room_id"
+    t.integer  "to_room"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
