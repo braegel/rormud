@@ -14,6 +14,7 @@ orange: 	#e62900
 brown:		#ce8e00
 dark-yellow:#e0c800
 br-yellow:	#e2f52c
+yellow:		#e2f52c
 brown-red	#6d2c2a
 dark-grey	#302e29
 dark-blue	#1f1b52
@@ -37,8 +38,12 @@ h2{
 }
 
 .exits a{
-	color: #e0c800;
+	color: #e2f52c;
 }
+
+.exits ul li a:visited {
+    color: #e0c800;
+ }
 
 li {
   list-style-type: none;

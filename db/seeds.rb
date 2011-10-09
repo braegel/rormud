@@ -5,7 +5,7 @@ Exit.delete_all
 
 Room.create(
   :name => "Ein langer dunkler Flur",
-  :description => "Vor dir liegt ein langer dunkler Flur. Am Ende des Flures befindet sich eine Tür mit der Aufschrift 'Anmeldung'"
+  :description => "Vor dir liegt ein langer dunkler Flur. Am Ende des Flures befindet sich eine Stahltür mit der Aufschrift 'Anmeldung'"
 )
 
 Room.create(
@@ -16,5 +16,11 @@ Room.create(
 Exit.create(
   :room_id => Room.where(:name => "Ein langer dunkler Flur").first.id,
   :to_room => Room.where(:name => "Anmeldung").first.id,
-  :name => "Tür am Ende des Flures"
+  :name => "Stahltür am Ende des Flures"
+)
+
+Exit.create(
+  :room_id => Room.where(:name => "Anmeldung").first.id,
+  :to_room => Room.where(:name => "Ein langer dunkler Flur").first.id,
+  :name => "Stahltür"
 )
