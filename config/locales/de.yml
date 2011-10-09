@@ -81,6 +81,7 @@ de:
   job: "Gesuch"
   navigation: "Navigation"
   my_data: "Meine Daten"
+  invalid_user_password_combination: "Ungültige Benutzername/Password Kombination"
   activerecord:
     errors:
       models:
