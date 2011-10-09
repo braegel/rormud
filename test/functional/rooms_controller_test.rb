@@ -2,6 +2,7 @@ require 'test_helper'
 
 class RoomsControllerTest < ActionController::TestCase
   setup do
+    session[:user_id]=users(:dave).id
     @room = rooms(:one)
   end
 

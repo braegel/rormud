@@ -2,6 +2,7 @@ require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
   setup do
+    session[:user_id]=users(:dave).id
     @input_attributes = {
       :username => "sam",
       :password => "private",

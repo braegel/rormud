@@ -7,7 +7,7 @@ class SessionsControllerTest < ActionController::TestCase
   end
   
   test "should login" do
-    dave = users(:one)
+    dave = users(:dave)
     post :create, :name => dave.username, :password => 'secret'
     assert_redirected_to room_path(Room.where(:name => 'Ein langer dunkler Flur').first.id)
     assert_equal dave.id, session[:user_id]

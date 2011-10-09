@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ExitsControllerTest < ActionController::TestCase
   setup do
+    session[:user_id]=users(:dave).id
     @exit = exits(:one)
   end
 
@@ -32,11 +33,6 @@ class ExitsControllerTest < ActionController::TestCase
   test "should get edit" do
     get :edit, id: @exit.to_param
     assert_response :success
-  end
-
-  test "should update exit" do
-    put :update, id: @exit.to_param, exit: @exit.attributes
-    assert_redirected_to exit_path(assigns(:exit))
   end
 
   test "should destroy exit" do
