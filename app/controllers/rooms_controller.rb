@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  skip_before_filter :authorize, :only => [:show]
   # GET /rooms
   # GET /rooms.json
   def index

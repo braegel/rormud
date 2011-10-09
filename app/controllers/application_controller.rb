@@ -1,20 +1,10 @@
 class ApplicationController < ActionController::Base
   before_filter :set_locale
-
-  def authorize(vars)
-    concat = Array.new
-    if User.exists?(session[:user_id]) && session[:user_id]
-      User.find(session[:user_id]).roles.each do |role|
-        concat << role
-      end
-      vars[:required_user_roles].each do |role|
-        concat << role
-      end
-      unless User.find(session[:user_id]) && concat.uniq.size < concat.size
-        redirect_to login_path, :notice => I18n.translate(:restricted_access)
-      end
-    else
-      redirect_to login_path, :notice => I18n.translate(:restricted_access)
+  before_filter :authorize
+  
+  def authorize
+    unless User.find_by_id(session[:user_id])
+    redirect_to login_url, :notice => I18n.translate(:please_log_in)
     end
   end
 
