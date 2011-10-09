@@ -1,4 +1,6 @@
 Rormud::Application.routes.draw do
+  resources :users
+
   resources :exits
 
   resources :rooms

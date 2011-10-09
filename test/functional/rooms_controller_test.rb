@@ -17,11 +17,17 @@ class RoomsControllerTest < ActionController::TestCase
   end
 
   test "should create room" do
+    @room.name = "New Room Name"
     assert_difference('Room.count') do
       post :create, room: @room.attributes
     end
-
     assert_redirected_to room_path(assigns(:room))
+  end
+
+  test "should not create room" do
+    post :create, room: @room.attributes
+    assert @room.invalid?
+    assert @room.errors[:name].any?
   end
 
   test "should show room" do
@@ -35,6 +41,7 @@ class RoomsControllerTest < ActionController::TestCase
   end
 
   test "should update room" do
+    @room.name = "New Room Name"
     put :update, id: @room.to_param, room: @room.attributes
     assert_redirected_to room_path(assigns(:room))
   end
