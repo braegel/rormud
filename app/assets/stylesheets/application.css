@@ -14,7 +14,7 @@ orange: 	#e62900 - people
 brown:		#ce8e00
 dark-yellow:#e0c800
 yellow:		#e2f52c - exits
-brown-red	#6d2c2a - visited
+brown-red	#6d2c2a - h1, h2
 dark-grey	#302e29
 dark-blue	#1f1b52
 mid-blue	#2717a6
@@ -22,6 +22,10 @@ light-blue:	#3625e0
 green:		#216221 - links
 
 */
+
+a {
+	color: #216221
+}
 
 #game{
 
@@ -46,6 +50,10 @@ green:		#216221 - links
 	color: #6d2c2a;
 }
 
+#maincolumn h2{
+	color: #6d2c2a;
+}
+
 #leftcolumn{
 	float: left;
 	width: 200px;
@@ -67,6 +75,10 @@ green:		#216221 - links
 }
 
 .exits a{
+	color: #e2f52c;
+}
+
+.exits a:visited;{
 	color: #e2f52c;
 }
 

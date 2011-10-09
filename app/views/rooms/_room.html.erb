@@ -4,6 +4,7 @@
 </div>
 
 <div class='exits'>
+	<h2><%= t(:exits) %></h2>
 <ul>
 <% @room.exits.each do |exit| %>
 <li><%= link_to exit.name, room_path(exit.to_room) %></li>

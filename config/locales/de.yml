@@ -83,19 +83,10 @@ de:
   my_data: "Meine Daten"
   invalid_user_password_combination: "Ungültige Benutzername/Password Kombination"
   signed_in_as: "Eingeloggt als"
+  exits: "Ausgänge"
   activerecord:
     errors:
       models:
-        job:
-          attributes:
-            firstday:
-              blank: "darf nicht leer sein"
-            lastday:
-              blank: "darf nicht leer sein"
-            wanted_specialization:
-              blank: "darf nicht leer sein"
-            description:
-              blank: "darf nicht leer sein"
         user:
           attributes:
             username:
