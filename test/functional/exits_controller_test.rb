@@ -23,7 +23,7 @@ class ExitsControllerTest < ActionController::TestCase
 
     assert_redirected_to exit_path(assigns(:exit))
   end
-
+  
   test "should show exit" do
     get :show, id: @exit.to_param
     assert_response :success
@@ -46,4 +46,5 @@ class ExitsControllerTest < ActionController::TestCase
 
     assert_redirected_to exits_path
   end
+  
 end
