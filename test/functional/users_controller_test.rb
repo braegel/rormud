@@ -22,18 +22,18 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should create user" do
-    @user.username = "New Username"
     assert_difference('User.count') do
       post :create, :user => @input_attributes
     end
 
-    assert_redirected_to users_path
+    assert_redirected_to login_url
   end
   
-  test "should not create iser" do
-    post :create, user: @user.attributes
-    assert @user.invalid?
-    assert @user.errors[:username].any?
+  test "should not create user" do
+    post :create, :user => @input_attributes
+    assert_no_difference('User.count') do
+      post :create, :user => @input_attributes
+    end
   end
 
   test "should show user" do

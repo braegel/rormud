@@ -5,13 +5,19 @@ Rormud::Application.routes.draw do
 
   get "sessions/destroy"
 
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
   resources :users
 
   resources :exits
 
   resources :rooms
 
-  root :to => 'rooms#start'
+  root :to => 'sessions#start'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

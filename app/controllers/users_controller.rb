@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if verify_recaptcha(:model => @user, :message => "Oh! It's error with reCAPTCHA!") && @user.save
-        format.html { redirect_to users_url, notice: 'User was successfully created.' }
+        format.html { redirect_to login_url, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
