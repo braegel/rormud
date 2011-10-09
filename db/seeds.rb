@@ -5,12 +5,12 @@ Exit.delete_all
 
 Room.create(
   :name => "Ein langer dunkler Flur",
-  :description => "Vor dir liegt ein langer dunkler Flur. Am Ende des Flures befindet sich eine Stahltür mit der Aufschrift 'Anmeldung'"
+  :description => "Vor Dir liegt ein langer dunkler Flur. Am Ende des Flures befindet sich eine Stahltür mit der Aufschrift 'Anmeldung'"
 )
 
 Room.create(
   :name => "Anmeldung",
-  :description => "Du befindest Dich in einem kleinen Zimmer mit strahlend hellem Licht."
+  :description => "Du befindest Dich in einem kleinen Zimmer mit hellem Licht. Das Licht is so hell, dass Du die Augen ein wenig zukneifen musst."
 )
 
 Exit.create(
