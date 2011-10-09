@@ -24,3 +24,9 @@ Exit.create(
   :to_room => Room.where(:name => "Ein langer dunkler Flur").first.id,
   :name => "Stahltür"
 )
+
+User.create(
+  :username => 'braegel',
+  :hashed_password => '01325651836f98c67ca2be38cb4146501b21979d274ea4ec418661b1961ae40c',
+  :salt => '24794468400.0001147621300998658'
+  )

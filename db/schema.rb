@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111009003435) do
+ActiveRecord::Schema.define(:version => 20111009121902) do
 
   create_table "exits", :force => true do |t|
     t.integer  "room_id"

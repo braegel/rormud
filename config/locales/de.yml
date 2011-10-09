@@ -1,0 +1,117 @@
+
+
+
+de:
+  contact: "Kontakt"
+  instructions: "Anleitung"
+  home: "Startseite"
+  bugtracker: "Fehler melden"
+  login: "Einloggen"
+  development_disclaimer: 'Diese Webseite befindet sich noch in Entwicklung. Fehler können <a href="http://www.braegelmann.net/mantis/login_page.php">hier</a> gemeldet werden.'
+  user: 'Benutzer'
+  jobs: 'Gesuche'
+  availabilities: 'Verfügbarkeiten'
+  assignements: 'Verknüpfungen'
+  logout: 'Ausloggen'
+  statistics: 'Statistiken'
+  there_are: 'Es gibt'
+  user_list: 'Benutzerliste'
+  show: "Details"
+  edit: "Bearbeiten"
+  destroy: "Löschen"
+  manager: "Teamleiter"
+  username: "Benutzername"
+  firstname: "Vorname"
+  lastname: "Nachname"
+  admin: "Admin"
+  facility: "Einrichtung"
+  agent: "Auftragnehmer"
+  new_user: "Neuen Benutzer anlegen"
+  address: "Addresse"
+  email: "Email"
+  phone: "Telefon"
+  editing_user: "Benutzer bearbeiten"
+  new_user: "Neuer Benutzer"
+  password: "Passwort"
+  confirm: "Bestätigung"
+  are_you_sure: "Sind sie sicher?"
+  restricted_access: "Zugriff verweigert"
+  firstday: "Erster Tag"
+  lastday: "Letzter Tag"
+  wanted_specialization: "Gewünschte Fachrichtung"
+  description: "Beschreibung"
+  update_job: "Speichere Gesuch"
+  errors_prohibited_this_job_from_being_saved: "Fehler verhinderten, dass dieses Gesuch gespeichert werden konnte."
+  job_list: "Liste der Gesuche"
+  editing_job: "Bearbeite Gesuch"
+  listing_jobs: "Liste der Gesuche"
+  open: "offen"
+  new_job: "Neues Gesuch"
+  created_by_user: "Erzeugt von"
+  calendar_listing_availabilities: "Kalenderansicht der Verfügbarkeiten"
+  listing_assignements: "Liste der Verknüpfungen"
+  available: "verfügbar"
+  day: "Tag"
+  is_already_marked_as_available_on: "ist bereits als verfügar markiert am"
+  please_log_in: "Bitte melden Sie sich an"
+  availability_was_successfully_updated: "Die Verfügbarkeit wurde erfolgreich geändert"
+  availability_was_successfully_created: "Die Verfügbarkeit wurde erfolgreich angelegt"
+  job_was_successfully_created: "Das Gesuch wurde erfolgreich angelegt"
+  job_was_successfully_updated: "Das Gesuch wurde erfolgreich geändert"
+  invalid_user_password_combination: "Ungültige Benutzername/Passwort Kombination"
+  logged_out: "Sie haben sich erfolgreich abgemeldet"
+  user_was_successfully_created: "Der Benutzer wurde erfolgreich angelegt"
+  user_was_successfully_updated: "Der Benutzer wurde erfolgreich geändert"
+  errors_prohibited_this_user_from_beeing_saved: "Fehler verhinderten, dass dieser Benutzer gespeichert werden konnte."
+  errors_prohibited_this_assignement_from_being_saved: "Fehler verhinderten, dass diese Zuordnung gespeichert werden konnte."  
+  must_be_after: "muss später sein, als"
+  must_be_valid: "muss gültig sein"
+  listing_users: "Benutzerliste"
+  missing: "fehlt"
+  save: "Speichern"
+  assign: "Verknüpfen"
+  action: "Aktion"
+  switch: "Ändern"
+  offered_specialization: "Angebotene Fachrichtung"
+  welcome: "Willkommen"
+  new_blog: "Neuer Blogeintrag"
+  news: "Aktuelles"
+  first_blog_title: "Willkommen"
+  first_blog_body: "Soeben wurde die Datenbank zurückgesetzt"
+  job: "Gesuch"
+  navigation: "Navigation"
+  my_data: "Meine Daten"
+  activerecord:
+    errors:
+      models:
+        job:
+          attributes:
+            firstday:
+              blank: "darf nicht leer sein"
+            lastday:
+              blank: "darf nicht leer sein"
+            wanted_specialization:
+              blank: "darf nicht leer sein"
+            description:
+              blank: "darf nicht leer sein"
+        user:
+          attributes:
+            username:
+              blank: "darf nicht leer sein"
+              taken: "wird bereits verwendet"
+            firstname:
+              blank: "darf nicht leer sein"
+            lastname:
+              blank: "darf nicht leer sein"
+            address:
+              blank: "darf nicht leer sein"
+            email:
+              blank: "darf nicht leer sein"
+            password:
+              confirmation: "ist nicht mit dem der Passwortbestätigung identisch"
+  time:
+    formats:
+      default: '%d.%m.%Y %H:%M:%S'
+  date:
+    formats:
+      default: '%d.%m.%Y'

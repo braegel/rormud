@@ -38,3 +38,5 @@ gem 'therubyracer'
 gem 'ci_reporter'
 
 gem 'test-unit'
+
+gem 'recaptcha'
