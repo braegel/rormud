@@ -11,9 +11,9 @@
 	<div id='banner'>
 		<span class='title'>Welcome to Ruby On Rails Multi User Dungeon</span>
 		<% if User.exists?(:id => session[:user_id]) %>
-			<div class="signed_in_field"><%= t(:signed_in_as) %> <span class='person'><%= link_to User.find(session[:user_id]).username, user_path(User.find(session[:user_id]))%></span> <%= link_to t(:logout), :method => :delete %></div>
+			<div class="signed_in_field"><%= t(:signed_in_as) %> <span class='person'><%= link_to User.find(session[:user_id]).username, user_path(User.find(session[:user_id]))%></span> <%= link_to t(:logout), logout_path, :method => :delete %></div>
 		<% else %>
-			<div class="signed_in_field"><%= path_to t(:login), login_url %></div>
+			<div class="signed_in_field"><%= link_to t(:login), login_url %></div>
 		<% end %>
 	</div>
 	<div id='leftcolumn'>
