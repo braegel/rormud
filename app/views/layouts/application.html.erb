@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id='game'>
+	<div id='banner'>
+		<span class='title'>Welcome to Ruby On Rails Multi User Dungeon</span>
+		<% if User.exists?(:id => session[:user_id]) %>
+			<div class="signed_in_field"><%= t(:signed_in_as) %> <span class='person'><%= link_to User.find(session[:user_id]).username, user_path(User.find(session[:user_id]))%></span> <%= link_to t(:logout), :method => :delete %></div>
+		<% else %>
+			<div class="signed_in_field"><%= path_to t(:login), login_url %></div>
+		<% end %>
+	</div>
+	<div id='leftcolumn'>
+		<h1>Navigation</h1>
+		<ul>
+			<li><%= link_to t(:start), room_path(Room.all.first.id)%></li>
+		</ul>
+	</div>
+	<div id='maincolumn'>
+		<%= yield %>
+	</div>
+	</div>
 </body>
 </html>

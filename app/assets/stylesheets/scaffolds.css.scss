@@ -29,18 +29,21 @@ p, ol, ul, td {
   font-size: 13px;
   line-height: 18px; }
 
+li {
+	list-style-type: none;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px; }
 
 a {
-  color: white;
+  color: #f2ffff;
   &:visited {
-    color: #666; }
+    color: #216221; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #fff;} }
 
 div {
   &.field, &.actions {

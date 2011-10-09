@@ -10,41 +10,66 @@
 http://www.colorschemer.com/schemes/viewscheme.php?id=8764
 white:		#f2ffff
 dark-red: 	#891225
-orange: 	#e62900
+orange: 	#e62900 - people
 brown:		#ce8e00
 dark-yellow:#e0c800
-br-yellow:	#e2f52c
-yellow:		#e2f52c
-brown-red	#6d2c2a
+yellow:		#e2f52c - exits
+brown-red	#6d2c2a - visited
 dark-grey	#302e29
 dark-blue	#1f1b52
 mid-blue	#2717a6
 light-blue:	#3625e0
-green:		#216221
+green:		#216221 - links
 
 */
 
-h2{
-	
+#game{
+
 }
 
-.room .name{
+#banner{
+	border-bottom: 1px solid #f2ffff;	
+}
+
+#banner .signed_in_field{
+	float: right;
+}
+
+#maincolumn{
+	float: left;
+	width: 600px;
+	border-left: 1px solid #f2ffff;
+	padding: 10px;
+}
+
+#maincolumn h1{
 	color: #6d2c2a;
 }
 
-.room .description{
-	color: #f2ffff;
-	width: 500px;
+#leftcolumn{
+	float: left;
+	width: 200px;
+	margin-left:50px;
+}
+
+#leftcolumn h1{
+	font-size: 100%;
+}
+
+#rightcolum{
+	float:left;
+	width: 200px;
+	padding-left: 10px;
+}
+
+#rightcolumn h1{
+	font-size: 100%;
 }
 
 .exits a{
 	color: #e2f52c;
 }
 
-.exits ul li a:visited {
-    color: #e0c800;
- }
-
-li {
-  list-style-type: none;
+.person {
+	color: #e62900;
 }

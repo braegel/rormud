@@ -82,6 +82,7 @@ de:
   navigation: "Navigation"
   my_data: "Meine Daten"
   invalid_user_password_combination: "Ungültige Benutzername/Password Kombination"
+  signed_in_as: "Eingeloggt als"
   activerecord:
     errors:
       models:

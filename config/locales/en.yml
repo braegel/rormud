@@ -82,3 +82,4 @@ en:
   my_data: "My Data"
   listing_users: "Listing Users"
   invalid_user_password_combination: "Invalid user/password combination"
+  signed_in_as: "Signed in as"
