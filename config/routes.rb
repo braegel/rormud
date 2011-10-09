@@ -1,9 +1,4 @@
 Rormud::Application.routes.draw do
-  get "sessions/new"
-
-  get "sessions/create"
-
-  get "sessions/destroy"
 
   controller :sessions do
     get 'login' => :new
